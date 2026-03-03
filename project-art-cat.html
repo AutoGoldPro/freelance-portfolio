@@ -11,25 +11,25 @@ body { font-family: system-ui, sans-serif; line-height: 1.6; color: var(--text);
 h1 { color: var(--primary); font-size: 2rem; margin-bottom: 10px; }
 .subtitle { color: var(--gray); font-style: italic; margin-bottom: 30px; display: block; }
 
-/* --- ИСПРАВЛЕННЫЕ СТИЛИ ДЛЯ КАРТИНКИ --- */
+/* --- ИСПРАВЛЕННЫЕ СТИЛИ ДЛЯ КАРТИНКИ (ЖЕСТКОЕ ОГРАНИЧЕНИЕ) --- */
 .art-wrapper {
-    margin: 30px auto; /* Центрируем сам блок */
+    margin: 20px auto;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     background: #fff;
-    display: inline-block; /* Блок сжимается по размеру картинки */
-    max-width: 100%; /* Не шире контейнера */
+    display: inline-block;
+    max-width: 100%;
 }
 
 .art-wrapper img {
     display: block;
-    max-width: 100%; /* Картинка не шире блока */
-    height: auto; /* Сохраняем пропорции */
-    max-height: 80vh; /* Ограничение по высоте: не больше 80% от высоты экрана */
-    object-fit: contain; /* Если картинка большая, она уменьшится, но не обрежется */
+    max-width: 100%;       /* Не шире контейнера */
+    height: auto;          /* Высота подстраивается автоматически */
+    max-height: 600px;     /* 🔥 ГЛАВНОЕ: Не выше 600 пикселей! Можно поставить 500px, если нужно еще меньше */
+    object-fit: contain;   /* Сохраняет пропорции */
 }
-/* --------------------------------------- */
+/* ----------------------------------------------------------- */
 
 .back-btn {
     position: fixed; top: 20px; left: 20px; z-index: 1000;
@@ -61,7 +61,7 @@ h1 { color: var(--primary); font-size: 2rem; margin-bottom: 10px; }
 
     <!-- БЛОК С ИЗОБРАЖЕНИЕМ -->
     <div class="art-wrapper">
-        <!-- Убедись, что имя файла совпадает (cat.jpg или image-41.jpg) -->
+        <!-- Проверь имя файла: cat.jpg или image-41.jpg -->
         <img src="cat.jpg" alt="Зарисовка кошки карандашом">
     </div>
 
