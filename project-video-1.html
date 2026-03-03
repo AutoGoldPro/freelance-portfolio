@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Динамичное интро для YouTube | Портфолио</title>
+<style>
+:root { --primary: #1e40af; --accent: #60a5fa; --bg: #f9fafb; --card: #ffffff; --text: #111827; --gray: #6b7280; --warning: #f59e0b; }
+body { font-family: system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+.container { max-width: 900px; margin: 40px auto; background: var(--card); padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; }
+h1 { color: var(--primary); font-size: 2rem; margin-bottom: 10px; }
+.subtitle { color: var(--gray); font-style: italic; margin-bottom: 30px; display: block; }
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background: #000;
+    margin-bottom: 30px;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%; border: 0;
+}
+.back-btn {
+    position: fixed; top: 20px; left: 20px; z-index: 1000;
+    background: #333; color: white; padding: 10px 15px;
+    text-decoration: none; border-radius: 5px; font-size: 14px;
+    transition: background 0.3s;
+}
+.back-btn:hover { background: #555; }
+.desc-box { 
+    text-align: left; 
+    padding: 25px; 
+    background: #f8fafc; 
+    border-radius: 8px; 
+    border-left: 5px solid var(--warning); 
+    margin-top: 20px;
+}
+.desc-box h3 { margin-top: 0; color: var(--primary); }
+.desc-box ul { padding-left: 20px; }
+.desc-box li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<a href="index.html" class="back-btn">⬅️ На главную</a>
+
+<div class="container">
+    <!-- ИЗМЕНЕННЫЙ ЗАГОЛОВОК (БЕЗ ИМЕНИ) -->
+    <h1>🎬 Динамичное интро для YouTube-канала</h1>
+    <span class="subtitle">Эффекты частиц, глитч, огненный переход</span>
+
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/VvHl0LyJt8o" 
+            title="Динамичное интро для YouTube" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="desc-box">
+        <h3>О проекте:</h3>
+        <p>Разработка стильной анимированной заставки для YouTube. Задача заключалась в создании динамичного визуального ряда, который удержит внимание зрителя с первых секунд и передаст статус бренда.</p>
+        <ul>
+            <li>✅ <strong>Эффекты:</strong> Частицы (particles), цифровой глитч, огненный переход.</li>
+            <li>✅ <strong>Стиль:</strong> Современный моушн-дизайн, адаптация под брендбук.</li>
+            <li>✅ <strong>Инструменты:</strong> Видеомонтаж, композитинг, работа с типографикой.</li>
+        </ul>
+        <p><em>Нажмите Play, чтобы посмотреть результат.</em></p>
+    </div>
+</div>
+
+</body>
+</html>
