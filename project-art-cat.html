@@ -10,21 +10,27 @@ body { font-family: system-ui, sans-serif; line-height: 1.6; color: var(--text);
 .container { max-width: 900px; margin: 40px auto; background: var(--card); padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; }
 h1 { color: var(--primary); font-size: 2rem; margin-bottom: 10px; }
 .subtitle { color: var(--gray); font-style: italic; margin-bottom: 30px; display: block; }
-/* Стили для изображения */
+
+/* --- ИСПРАВЛЕННЫЕ СТИЛИ ДЛЯ КАРТИНКИ --- */
 .art-wrapper {
-    margin: 30px 0;
+    margin: 30px auto; /* Центрируем сам блок */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     background: #fff;
-    display: inline-block;
-    max-width: 100%;
+    display: inline-block; /* Блок сжимается по размеру картинки */
+    max-width: 100%; /* Не шире контейнера */
 }
+
 .art-wrapper img {
-    max-width: 100%;
-    height: auto;
     display: block;
+    max-width: 100%; /* Картинка не шире блока */
+    height: auto; /* Сохраняем пропорции */
+    max-height: 80vh; /* Ограничение по высоте: не больше 80% от высоты экрана */
+    object-fit: contain; /* Если картинка большая, она уменьшится, но не обрежется */
 }
+/* --------------------------------------- */
+
 .back-btn {
     position: fixed; top: 20px; left: 20px; z-index: 1000;
     background: #333; color: white; padding: 10px 15px;
@@ -55,8 +61,7 @@ h1 { color: var(--primary); font-size: 2rem; margin-bottom: 10px; }
 
     <!-- БЛОК С ИЗОБРАЖЕНИЕМ -->
     <div class="art-wrapper">
-        <!-- Убедись, что файл картинки называется cat.jpg и лежит рядом с этим файлом -->
-        <!-- Если у тебя png, замени cat.jpg на cat.png -->
+        <!-- Убедись, что имя файла совпадает (cat.jpg или image-41.jpg) -->
         <img src="cat.jpg" alt="Зарисовка кошки карандашом">
     </div>
 
@@ -66,7 +71,7 @@ h1 { color: var(--primary); font-size: 2rem; margin-bottom: 10px; }
         <ul>
             <li>✅ <strong>Материалы:</strong> Графитные карандаши разной твердости, бумага для эскизов.</li>
             <li>✅ <strong>Техника:</strong> Многослойная штриховка, работа со светотенью.</li>
-            <li>✅ <strong>Время выполнения:</strong> ~3-4 часа (пример).</li>
+            <li>✅ <strong>Время выполнения:</strong> ~3-4 часа.</li>
         </ul>
         <p><em>Готов выполнить аналогичные работы по фото заказчика: портреты питомцев, иллюстрации для книг, скетчи.</em></p>
     </div>
