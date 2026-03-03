@@ -10,20 +10,25 @@ body { font-family: system-ui, sans-serif; line-height: 1.6; color: var(--text);
 .container { max-width: 900px; margin: 40px auto; background: var(--card); padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; }
 h1 { color: var(--primary); font-size: 2rem; margin-bottom: 10px; }
 .subtitle { color: var(--gray); font-style: italic; margin-bottom: 30px; display: block; }
+
+/* Стили для локального видео */
 .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
+    margin: 30px auto;
     border-radius: 12px;
+    overflow: hidden;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     background: #000;
-    margin-bottom: 30px;
+    display: inline-block;
+    max-width: 100%;
 }
-.video-wrapper iframe {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%; border: 0;
+.video-wrapper video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh; /* Ограничение высоты, как у кота */
+    object-fit: contain;
 }
+
 .back-btn {
     position: fixed; top: 20px; left: 20px; z-index: 1000;
     background: #333; color: white; padding: 10px 15px;
@@ -52,28 +57,24 @@ h1 { color: var(--primary); font-size: 2rem; margin-bottom: 10px; }
     <h1>🎬 Динамичное интро для YouTube-канала</h1>
     <span class="subtitle">Эффекты частиц, глитч, огненный переход</span>
 
-    <!-- БЛОК С ВИДЕО (Автозапуск + Зацикливание) -->
+    <!-- БЛОК С ВИДЕО (ЗАГРУЖЕНО ПРЯМО НА GITHUB) -->
     <div class="video-wrapper">
-        <iframe 
-            src="https://www.youtube.com/embed/VvHl0LyJt8o?loop=1&playlist=VvHl0LyJt8o&autoplay=1&mute=1" 
-            title="Динамичное интро" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
+        <!-- autoplay - автозапуск, loop - зацикливание, muted - без звука, playsinline - для мобильных -->
+        <video autoplay loop muted playsinline controls>
+            <source src="intro.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
     </div>
 
     <div class="desc-box">
         <h3>О проекте:</h3>
-        <p>Разработка стильной анимированной заставки для YouTube. Задача заключалась в создании динамичного визуального ряда, который удержит внимание зрителя с первых секунд и передаст статус бренда.</p>
+        <p>Разработка стильной анимированной заставки для YouTube. Задача заключалась в создании динамичного визуального ряда, который удержит внимание зрителя с первых секунд.</p>
         <ul>
-            <li>✅ <strong>Эффекты:</strong> Частицы (particles), цифровой глитч, огненный переход.</li>
-            <li>✅ <strong>Стиль:</strong> Современный моушн-дизайн, адаптация под брендбук.</li>
-            <li>✅ <strong>Инструменты:</strong> Видеомонтаж, композитинг, работа с типографикой.</li>
+            <li>✅ <strong>Эффекты:</strong> Частицы, цифровой глитч, огненный переход.</li>
+            <li>✅ <strong>Стиль:</strong> Современный моушн-дизайн.</li>
+            <li>✅ <strong>Формат:</strong> Зацикленное видео без звука (идеально для фона или интро).</li>
         </ul>
-        <!-- ИСПРАВЛЕННАЯ ФРАЗА ПРО ЗВУК -->
-        <p><em>Формат работы: динамичная визуальная анимация без звукового сопровождения (ideal для использования в качестве фона или интро).</em></p>
+        <p><em>Видео воспроизводится автоматически и повторяется бесконечно.</em></p>
     </div>
 </div>
 
