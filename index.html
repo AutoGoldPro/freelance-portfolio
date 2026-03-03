@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Моё портфолио | Александр Виноградов</title>
+    <style>
+        :root {
+            --primary: #1e40af;
+            --accent: #60a5fa;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --text: #111827;
+            --gray: #6b7280;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 40px;
+            background: var(--card);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 32px;
+            border-bottom: 4px solid var(--accent);
+        }
+        h1 {
+            color: var(--primary);
+            margin: 0 0 12px;
+            font-size: 2.4rem;
+        }
+        .subtitle {
+            color: var(--gray);
+            font-size: 1.15rem;
+            font-style: italic;
+        }
+        .intro {
+            margin-top: 20px;
+            color: var(--gray);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .section-title {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin: 48px 0 24px;
+            padding-left: 16px;
+            border-left: 6px solid var(--accent);
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+        .project-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 6px solid var(--accent);
+            border-radius: 10px;
+            padding: 24px;
+            transition: all 0.35s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+        }
+        .project-title {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+        .project-desc {
+            color: var(--gray);
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 14px;
+            transition: background 0.3s;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #059669;
+        }
+        .btn.video { background: var(--warning); }
+        .btn.video:hover { background: #d97706; }
+        .btn.art { background: var(--primary); }
+        .btn.art:hover { background: #1e3a8a; }
+        
+        footer {
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid #e5e7eb;
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 28px; margin: 20px; }
+            h1 { font-size: 2rem; }
+            .project-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Привет! Я Александр Виноградов</h1>
+            <div class="subtitle">Фрилансер: видео, дизайн, анализ, текст, изображения</div>
+            <div class="intro">
+                <p>Работаю на платформах Workzilla и Insolvo — выполняю задачи разной сложности: от простых правок до комплексных проектов.</p>
+                <p>Использую ИИ для повышения точности и скорости, но всегда контролирую результат вручную.</p>
+                <p><strong>Мои приоритеты:</strong> внимание к деталям, соблюдение сроков, готовность к правкам.</p>
+                <p>Открыт к новым заказам и долгосрочному сотрудничеству!</p>
+            </div>
+        </header>
+
+        <!-- АНАЛИЗ И ТЕКСТЫ (Твой главный проект сейчас здесь) -->
+        <h2 class="section-title">📊 Анализ данных и тексты</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-title">Анализ судебной практики: Ответственность директора ООО</div>
+                <div class="project-desc">
+                    Глубокий разбор 15+ дел, статистика, выводы для бизнеса и юристов. 
+                    Обзор ключевых позиций ВС РФ 2023–2025 гг.
+                </div>
+                <!-- ССЫЛКА ИЗМЕНЕНА НА monitoring.html -->
+                <a href="monitoring.html" class="btn">Смотреть работу</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Тексты для лендингов и сайтов</div>
+                <div class="project-desc">
+                    Копирайтинг, SEO-оптимизация, структура, адаптация под ЦА.
+                </div>
+                <a href="#" class="btn" style="background:#ccc; cursor:not-allowed;">Примеры скоро</a>
+            </div>
+        </div>
+
+        <!-- ВИДЕО РАБОТЫ -->
+        <h2 class="section-title">🎬 Видео и анимация</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-title">Обложка для YouTube: «Гардеробная Овсянникова»</div>
+                <div class="project-desc">
+                    Динамичная анимированная обложка с эффектами частиц, глитчем и огненным переходом.
+                </div>
+                <a href="#" class="btn video" style="background:#ccc; cursor:not-allowed;">Скоро...</a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-title">Анимация пингвина для Telegram-канала</div>
+                <div class="project-desc">
+                    Персонализированная анимация для личного бренда.
+                </div>
+                <a href="#" class="btn video" style="background:#ccc; cursor:not-allowed;">В разработке</a>
+            </div>
+        </div>
+
+        <!-- ИЗОБРАЖЕНИЯ И РИСОВАНИЕ -->
+        <h2 class="section-title">🖼 Изображения и рисунки</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-title">Зарисовка кошки (карандаш)</div>
+                <div class="project-desc">
+                    Реалистичный портрет кошки в технике графического карандаша.
+                </div>
+                <a href="#" class="btn art" style="background:#ccc; cursor:not-allowed;">Скоро...</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Набор животных (графический стиль)</div>
+                <div class="project-desc">
+                    Коллекция из 7 животных: лев, птица, змея, лягушка, заяц, белка, рыба.
+                </div>
+                <a href="#" class="btn art" style="background:#ccc; cursor:not-allowed;">Скоро...</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Александр Виноградов • Портфолио фрилансера</p>
+            <p>
+                <!-- ТВОЯ ПАРТНЁРСКАЯ ССЫЛКА NA INSOLVO -->
+                <a href="https://insolvo.com/portfolio/xxVtoX?ref=667278&sub=portfolio&tgref=667278" target="_blank" style="color: var(--accent);">Профиль на Insolvo</a> • 
+                <!-- ТВОЯ ССЫЛКА NA WORKZILLA -->
+                <a href="https://work-zilla.com/portfolio/sCWenh?ref=9629801&sub=portfolio&tgref=9629801" target="_blank" style="color: var(--accent);">Профиль на Work-zilla</a> • 
+                <a href="https://github.com/AutoGoldPro/freelance-portfolio" target="_blank" style="color: var(--accent);">GitHub</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

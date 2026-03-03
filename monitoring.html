@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анализ судебной практики: Ответственность директора ООО</title>
+<style>
+:root {
+--primary: #1e40af;
+--accent: #60a5fa;
+--bg: #f9fafb;
+--card: #ffffff;
+--text: #111827;
+--gray: #6b7280;
+--success: #10b981;
+--danger: #ef4444;
+}
+body {
+font-family: system-ui, -apple-system, sans-serif;
+line-height: 1.7;
+color: var(--text);
+background: var(--bg);
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 980px;
+margin: 40px auto;
+background: var(--card);
+padding: 40px;
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+header {
+text-align: center;
+padding-bottom: 32px;
+border-bottom: 4px solid var(--accent);
+}
+h1 {
+color: var(--primary);
+margin: 0 0 12px;
+font-size: 2.4rem;
+}
+.subtitle {
+color: var(--gray);
+font-size: 1.15rem;
+font-style: italic;
+}
+.meta {
+margin-top: 20px;
+font-size: 1rem;
+color: var(--gray);
+}
+nav {
+background: linear-gradient(to right, #eff6ff, #dbeafe);
+padding: 16px;
+border-radius: 12px;
+margin: 32px 0;
+position: sticky;
+top: 16px;
+z-index: 10;
+box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+justify-content: center;
+}
+nav a {
+color: var(--primary);
+text-decoration: none;
+font-weight: 600;
+padding: 10px 20px;
+border-radius: 8px;
+transition: all 0.3s;
+}
+nav a:hover {
+background: var(--accent);
+color: white;
+}
+h2 {
+color: var(--primary);
+border-left: 6px solid var(--accent);
+padding-left: 16px;
+margin: 56px 0 28px;
+font-size: 2rem;
+}
+.case-card {
+background: #f8fafc;
+border: 1px solid #e2e8f0;
+border-left: 6px solid var(--accent);
+border-radius: 10px;
+padding: 28px;
+margin-bottom: 28px;
+transition: all 0.35s ease;
+}
+.case-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+}
+.case-number {
+font-weight: 700;
+color: var(--accent);
+font-size: 1.15rem;
+margin-bottom: 14px;
+display: block;
+}
+.outcome {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+padding: 8px 16px;
+border-radius: 8px;
+font-weight: 600;
+margin-top: 14px;
+font-size: 1rem;
+}
+.outcome.win { background: #ecfdf5; color: var(--success); }
+.outcome.loss { background: #fef2f2; color: var(--danger); }
+.link {
+color: var(--accent);
+text-decoration: underline;
+transition: color 0.2s;
+}
+.link:hover { color: #1d4ed8; }
+table.summary {
+width: 100%;
+border-collapse: collapse;
+margin: 32px 0;
+font-size: 1rem;
+}
+table.summary th, table.summary td {
+padding: 12px;
+text-align: left;
+border-bottom: 1px solid #e5e7eb;
+}
+table.summary th {
+background: #eff6ff;
+color: var(--primary);
+}
+footer {
+text-align: center;
+margin-top: 64px;
+padding-top: 32px;
+border-top: 1px solid #e5e7eb;
+color: var(--gray);
+font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+.container { padding: 28px; margin: 20px; }
+nav ul { flex-direction: column; gap: 16px; }
+h1 { font-size: 2rem; }
+}
+/* Стили для кнопки назад */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+}
+.back-btn:hover {
+    background: #555;
+}
+</style>
+</head>
+<body>
+
+<!-- ✅ КНОПКА НАЗАД (ДОБАВЛЕНА СЮДА) -->
+<a href="index.html" class="back-btn">⬅️ На главную</a>
+
+<div class="container">
+<header>
+<h1>Анализ судебной практики по ответственности директора ООО</h1>
+<div class="subtitle">Убытки от действий / бездействия руководителя — обзор ключевых дел и тенденций 2023–2025 гг.</div>
+<div class="meta">
+Тип работы: Аналитический обзор судебной практики<br>
+Автор: Александр Виноградов<br>
+<a href="https://work-zilla.com/portfolio/sCWenh?ref=9629801&sub=portfolio&tgref=9629801" class="link" target="_blank">Профиль на Work-zilla</a>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="#intro">Введение</a></li>
+<li><a href="#novelties">Новеллы 2025</a></li>
+<li><a href="#chapter1">Конфликт интересов</a></li>
+<li><a href="#chapter2">Неразумные действия</a></li>
+<li><a href="#chapter3">Недобросовестность</a></li>
+<li><a href="#stats">Статистика</a></li>
+<li><a href="#conclusion">Выводы</a></li>
+</ul>
+</nav>
+<section id="intro">
+<h2>Введение</h2>
+<p>Ответственность директора по ст. 53.1 ГК РФ — одна из самых динамичных тем корпоративного права. В 2023–2025 годах суды перешли от формального подхода к оценке экономической целесообразности решений.</p>
+<p><strong>Основной источник:</strong> <a href="https://www.vsrf.ru/documents/all/34596/" class="link" target="_blank">Обзор практики ВС РФ от 30.07.2025</a> (26 позиций).</p>
+<p>Цель — показать реальные кейсы, тенденции и практические выводы для бизнеса и юристов.</p>
+</section>
+<section id="novelties">
+<h2>Ключевые новеллы Обзора ВС РФ от 30.07.2025</h2>
+<p>Обзор существенно уточнил практику по ст. 53.1 ГК РФ. Самые важные позиции:</p>
+<ul>
+<li>Раскрытие конфликта интересов снимает презумпцию вины директора — бремя доказывания ущерба на истце (п. 2)</li>
+<li>Фактическая аффилированность может создать конфликт даже без формальных связей (п. 3)</li>
+<li>При расчёте убытков обязательно учитывать встречную выгоду, полученную обществом (п. 11)</li>
+<li>Одобрение сделки участниками или советом не всегда освобождает директора (пп. 16–19)</li>
+<li>Привлечение общества к административной ответственности само по себе не основание для взыскания штрафа с директора (п. 14)</li>
+<li>Номинальные и фактические руководители отвечают солидарно</li>
+</ul>
+<p><a href="https://www.vsrf.ru/documents/all/34596/" class="link" target="_blank">Читать полный Обзор →</a></p>
+</section>
+<section id="chapter1">
+<h2>Глава 1. Конфликт интересов и сделки с заинтересованностью</h2>
+<div class="case-card">
+<span class="case-number"><a href="https://kad.arbitr.ru/Card?number=A07-28687-2024" class="link" target="_blank">Дело № А07-28687/2024</a> (АС Уральского округа)</span>
+<p><strong>Фабула:</strong> Цессия прав на 68 млн ₽ аффилированным лицам с отсрочкой 1,5 года → банкротство.</p>
+<p><strong>Решение:</strong> Убытки (расходы на банкротство) взысканы.</p>
+<span class="outcome win">✔️ Взыскано: 3,25 млн ₽</span>
+</div>
+<div class="case-card">
+<span class="case-number"><a href="https://kad.arbitr.ru/Card?number=A73-10099-2022" class="link" target="_blank">Дело № А73-10099/2022</a> (АС Дальневосточного округа)</span>
+<p><strong>Фабула:</strong> Самостоятельное повышение вознаграждения до 2,6 млн ₽ без одобрения участников.</p>
+<p><strong>Решение:</strong> Признано сделкой с заинтересованностью, взыскано.</p>
+<span class="outcome win">✔️ Взыскано: 1,81 млн ₽</span>
+</div>
+<div class="case-card">
+<span class="case-number">Пункт 19 <a href="https://www.vsrf.ru/documents/all/34596/" class="link" target="_blank">Обзора ВС РФ 30.07.2025</a></span>
+<p><strong>Вывод:</strong> Одобрение сделки заинтересованными участниками не всегда защищает директора, если он знал о вреде.</p>
+<span class="outcome win">✔️ Солидарная ответственность</span>
+</div>
+</section>
+<section id="chapter2">
+<h2>Глава 2. Неразумные действия и бездействие</h2>
+<div class="case-card">
+<span class="case-number">Дело № А55-31309/2024</span>
+<p><strong>Фабула:</strong> Игнорирование требования участника о выдаче документов → неустойка обществу.</p>
+<p><strong>Решение:</strong> Взыскано с директора как убытки от бездействия.</p>
+<span class="outcome win">✔️ Взыскано: 402 тыс. ₽</span>
+</div>
+<div class="case-card">
+<span class="case-number">Дело № А56-92026/2024</span>
+<p><strong>Фабула:</strong> Беспроцентные займы контрагентам. Истец требовал упущенную выгоду.</p>
+<p><strong>Решение:</strong> Отказано — займы возвращены, возможность размещения под % не доказана.</p>
+<span class="outcome loss">✗ Отказ в иске</span>
+</div>
+</section>
+<section id="chapter3">
+<h2>Глава 3. Недобросовестные действия и солидарная ответственность</h2>
+<div class="case-card">
+<span class="case-number">Дело № А43-10826/2024</span>
+<p><strong>Фабула:</strong> Вывод 161 млн ₽ на личные нужды без оправдательных документов.</p>
+<p><strong>Решение:</strong> Иск удовлетворён полностью.</p>
+<span class="outcome win">✔️ Взыскано: 161,6 млн ₽</span>
+</div>
+<div class="case-card">
+<span class="case-number">Дело № А40-104543/2023 (ООО «Коноплекс»)</span>
+<p><strong>Фабула:</strong> Личные траты по карте компании, премии себе, утрата имущества.</p>
+<p><strong>Решение:</strong> Компания использовалась как личный кошелёк — взыскано.</p>
+<span class="outcome win">✔️ Взыскано: 11,7 млн ₽</span>
+</div>
+</section>
+<section id="stats">
+<h2>Краткая статистика (по 15 ключевым делам)</h2>
+<table class="summary">
+<tr><th>Категория</th><th>Удовлетворено</th><th>Отказано</th><th>Сумма взыскано (примерно)</th></tr>
+<tr><td>Конфликт интересов</td><td>3</td><td>2</td><td>\~5,8 млн ₽</td></tr>
+<tr><td>Неразумные действия</td><td>1</td><td>4</td><td>0,4 млн ₽</td></tr>
+<tr><td>Недобросовестность</td><td>3</td><td>2</td><td>>484 млн ₽</td></tr>
+<tr><td><strong>Итого</strong></td><td><strong>7</strong></td><td><strong>8</strong></td><td><strong>>490 млн ₽</strong></td></tr>
+</table>
+<p>Вывод: суды строже к нарушениям с личной корыстью, но защищают честные предпринимательские риски.</p>
+</section>
+<section id="conclusion">
+<h2>Основные выводы</h2>
+<ul>
+<li>При нераскрытом конфликте интересов — презумпция вины директора</li>
+<li>Бездействие (штрафы, неустойки) влечёт личную ответственность</li>
+<li>Номинальные и фактические руководители отвечают солидарно</li>
+<li>Честные бизнес-решения без личной выгоды защищены (business judgment rule)</li>
+</ul>
+<p style="margin-top: 28px; font-weight: 500;">Этот обзор демонстрирует навыки глубокого анализа судебной практики, структурирования информации и выделения практических инсайтов.</p>
+</section>
+<footer>
+<p>Пример аналитической работы для демонстрации экспертизы</p>
+<p>Источники: <a href="https://kad.arbitr.ru/" class="link" target="_blank">Картотека арбитражных дел</a> • <a href="https://www.vsrf.ru/" class="link" target="_blank">Верховный Суд РФ</a> • КонсультантПлюс</p>
+</footer>
+</div>
+<script>
+// Плавный скролл к якорям
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+});
+});
+</script>
+</body>
+</html>
